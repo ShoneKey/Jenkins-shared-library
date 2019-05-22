@@ -2,7 +2,7 @@
 
 node{
      info  'abcdefg'
-     waring  'ceddefsfsfs'
+     warning  'ceddefsfsfs'
 }
 
 

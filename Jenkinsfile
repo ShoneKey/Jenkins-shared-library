@@ -4,9 +4,10 @@ node{
 
     dir('Jenkins-shared-library') {
         // some block
-        buildPlugin{
-            name='stage'
-        }
+        import org.foo.groovy.pipeline.utils.*
+
+        info  'abcdefg'
+        waring  'ceddefsfsfs'
     }
 }
 

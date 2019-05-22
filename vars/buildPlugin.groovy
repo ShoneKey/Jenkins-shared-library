@@ -8,22 +8,17 @@ def call(body) {
     body()
 
     // now build, based on the configuration provided
-    node {
-//        git url: "https://github.com/jenkinsci/${config.name}-plugin.git"
-//        sh "mvn install"
-//        mail to: "...", subject: "${config.name} plugin build", body: "..."
 
-        stage('test1'){
-            log.info 'Starting'
-            log.warning 'Nothing to do!'
-        }
-        stage('test2'){
-            log.info 'Starting'
-            log.warning 'Nothing to do!'
-        }
-        stage('test3'){
-            log.info 'Starting'
-            log.warning 'Nothing to do!'
-        }
+    stage('test1'){
+        log.info 'Starting'
+        log.warning 'Nothing to do!'
+    }
+    stage('test2'){
+        log.info 'Starting'
+        log.warning 'Nothing to do!'
+    }
+    stage('test3'){
+        log.info 'Starting'
+        log.warning 'Nothing to do!'
     }
 }

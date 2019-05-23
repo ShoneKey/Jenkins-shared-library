@@ -1,8 +1,20 @@
 @Library('mylib1@master') _
 
 node{
-     log.info 'Starting'
-     log.warning 'Nothing to do!'
+     buildPlugin{
+        stage('test1'){
+                log.info 'Starting'
+                log.warning 'Nothing to do!'
+            }
+            stage('test2'){
+                log.info 'Starting'
+                log.warning 'Nothing to do!'
+            }
+            stage('test3'){
+                log.info 'Starting'
+                log.warning 'Nothing to do!'
+            }
+     }
 }
 
 

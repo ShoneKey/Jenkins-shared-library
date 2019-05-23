@@ -5,20 +5,11 @@ def call(body) {
     def config = [:]
     body.resolveStrategy = Closure.DELEGATE_FIRST
     body.delegate = config
-    body()
+
 
     // now build, based on the configuration provided
+    node{
+        body()
+    }
 
-    stage('test1'){
-        log.info 'Starting'
-        log.warning 'Nothing to do!'
-    }
-    stage('test2'){
-        log.info 'Starting'
-        log.warning 'Nothing to do!'
-    }
-    stage('test3'){
-        log.info 'Starting'
-        log.warning 'Nothing to do!'
-    }
 }

@@ -1,4 +1,4 @@
-@Library('mylib1') _
+@Library('mylib1@master') _
 
 node{
      buildPlugin name:stage

@@ -1,4 +1,4 @@
-@Library('utils') import org.foo.groovy.pipeline.utils
+@Library('mylib1') import org.foo.groovy.pipeline.utils
 
 node{
         def utils=new utils()

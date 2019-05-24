@@ -1,7 +1,17 @@
-@Library('mylib1') _
+import org.foo.groovy.pipeline.utils.*
 
-buildPlugin{
-
-}
-
+node{
+        stage('test1'){
+            log.info 'Starting'
+            log.warning 'Nothing to do!'
+        }
+        stage('test2'){
+            log.info 'Starting'
+            log.warning 'Nothing to do!'
+        }
+        stage('test3'){
+            log.info 'Starting'
+            log.warning 'Nothing to do!'
+        }
+    }
 

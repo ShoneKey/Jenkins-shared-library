@@ -1,17 +1,7 @@
-import org.foo.groovy.pipeline.utils.*
+@Library('mylib1') _
 
-node{
-        stage('test1'){
-            info 'Starting'
-            warning 'Nothing to do!'
-        }
-        stage('test2'){
-            info 'Starting'
-            warning 'Nothing to do!'
-        }
-        stage('test3'){
-            info 'Starting'
-            warning 'Nothing to do!'
-        }
-    }
+buildPlugin{
+
+}
+
 

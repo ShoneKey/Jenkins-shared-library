@@ -8,4 +8,4 @@ def warning(message) {
     echo "WARNING: ${message}"
 }
 
-return this
+//return this

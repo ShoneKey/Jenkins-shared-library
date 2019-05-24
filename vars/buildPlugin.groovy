@@ -11,16 +11,16 @@ def call(body) {
     // now build, based on the configuration provided
     node{
         stage('test1'){
-            utils.info 'Starting'
-            utils.warning 'Nothing to do!'
+            utils.info('Starting')
+            utils.warning('Nothing to do!')
         }
         stage('test2'){
-            utils.info 'Starting'
-            utils.warning 'Nothing to do!'
+            utils.info('Starting')
+            utils.warning('Nothing to do!')
         }
         stage('test3'){
-            utils.info 'Starting'
-            utils.warning 'Nothing to do!'
+            utils.info('Starting')
+            utils.warning('Nothing to do!')
         }
     }
 

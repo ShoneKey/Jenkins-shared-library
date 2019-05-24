@@ -1,4 +1,4 @@
-import org.foo.groovy.pipeline.utils.*
+from org.foo.groovy.pipeline.utils import *
 
 node{
         stage('test1'){

@@ -1,10 +1,11 @@
 import org.foo.groovy.pipeline.utils.*
 
-def call() {
-    // evaluate the body block, and collect configuration into the object
-//    def config = [:]
-//    body.resolveStrategy = Closure.DELEGATE_FIRST
-//    body.delegate = config
+def call(body) {
+    //evaluate the body block, and collect configuration into the object
+    def config = [:]
+    body.resolveStrategy = Closure.DELEGATE_FIRST
+    body.delegate = config
+    body()
 
 
     // now build, based on the configuration provided

@@ -10,17 +10,18 @@ def call(body) {
 
     // now build, based on the configuration provided
     node{
+        def utils=new utils()
         stage('test1'){
-            utils.info message:'Starting'
+            utils.info 'Starting'
             utils.warning 'Nothing to do!'
         }
         stage('test2'){
-            utils.info message:'Starting'
-            utils.warning message:'Nothing to do!'
+            utils.info 'Starting'
+            utils.warning 'Nothing to do!'
         }
         stage('test3'){
-            utils.info message:'Starting'
-            utils.warning message:'Nothing to do!'
+            utils.info 'Starting'
+            utils.warning 'Nothing to do!'
         }
     }
 
